@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张晨曦 - 个人主页</title>
+    <style>
+        /* 原有样式保持不变 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #4a4a4a;
+            background-image: url('bj.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #fff8e1;
+        }
+
+        nav {
+            background-color: rgba(255, 213, 79, 0.8);
+            padding: 1rem;
+            position: fixed;
+            top: -100px;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: top 0.3s ease;
+        }
+
+        body:hover nav {
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            color: #4a4a4a;
+            text-decoration: none;
+            padding: 0 1.5rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            
+            nav a {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            body {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.9);
+            min-width: 300px;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        h1, h2 {
+            color: #ff8f00;
+            margin-bottom: 1.2rem;
+        }
+
+        .education-item {
+            margin: 1.5rem 0;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .contact-info i {
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .honors-list {
+            padding-left: 2rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#education">教育经历</a></li>
+            <li><a href="#honors">所获荣誉</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h1>张晨曦</h1>
+            <p>华中农业大学 资源与环境学院</p>
+            <p>资源与环境专业硕士研究生（2024级）</p>
+            <p>导师：郭再华 副教授</p>
+            <p>研究方向为水肥一体化，旨在用更先进的科学技术为农业生产贡献力量。</p>
+        </section>
+
+        <section id="education">
+            <h2>教育经历</h2>
+            <div class="education-item">
+                <h3>四川农业大学</h3>
+                <p>本科 | 农业资源与环境</p>
+                <p>2020 - 2024</p>
+            </div>
+            <div class="education-item">
+                <h3>华中农业大学</h3>
+                <p>硕士研究生 | 植物营养学</p>
+                <p>2024 - 至今</p>
+                <p>导师：郭再华 副教授</p>
+            </div>
+        </section>
+
+        <section id="honors">
+            <h2>所获荣誉</h2>
+            <ul class="honors-list">
+                <li>2022-2023 四川农业大学校资源与环境学院三等奖学金</li>
+                <li>2021-2022 四川农业大学资源与环境学院三好学生</li>
+                <li>2024年 华中农业大学研究生乙等奖学金</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <i class="fas fa-envelope"></i>
+                <p>邮箱：1604437912@qq.com</p>
+            </div>
+            <div class="contact-info">
+                <i class="fab fa-github"></i>
+                <p>GitHub：github.com/shuyanzhe</p>
+            </div>
+        </section>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; background-color: #ffd54f; color: #4a4a4a; position: fixed; bottom: 0; left: 0; right: 0;">
+        <p>&copy;风和我都是自由的</p>
+    </footer>
+</body>
+</html>
